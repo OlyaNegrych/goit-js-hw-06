@@ -1,0 +1,38 @@
+.soc-sites {
+    display: flex;
+    justify-content: center;
+}
+
+.soc-sites__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+ }
+
+  &:hover .soc-sites__icon,
+  &:focus .soc-sites__icon {
+    fill: $background-color;
+ }
+}
+
+.soc-sites__icon {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-sites__item:not(:first-child) {
+    margin-left: 10px;
+}

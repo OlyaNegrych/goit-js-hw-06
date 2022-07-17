@@ -1,0 +1,88 @@
+.teem {
+background-color: $secondary-bgr-color;
+}
+
+.teem__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1,18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.teem__list {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.teem__item {
+    width: 100%;
+    background: $background-color;
+    text-align: center;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+     @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+     }
+   }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px)/2);
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px; 
+        
+        &:not(:first-child) {
+        margin-left: 30px;
+     }
+    }    
+}
+
+.teem__image {
+    width: 100%;
+}
+
+.teem__thumb {
+    padding: 30px 32px;
+}
+
+.teem__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+
+.teem__position {
+ margin-bottom: 16px;
+
+  font-size: 16px;
+line-height: 1.19;
+ font-weight: 400;
+ color: $text-color;
+}
