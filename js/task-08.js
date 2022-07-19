@@ -19,7 +19,9 @@ const OnFormSubmit = (event) => {
 
     console.log(dataSet);
 
-    
+    inputEmailRef.value = '';
+    inputPasswordRef.value = '';
+
 };
 
 formRef.addEventListener('submit', OnFormSubmit);
