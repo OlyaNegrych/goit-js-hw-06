@@ -1,6 +1,6 @@
 //------------Завдання 1.1.----------------------
-const numberOfCategjries = document.querySelectorAll('li.item');
-console.log(`Number of categories: ${numberOfCategjries.length}`);
+const numberOfCategories = document.querySelectorAll('li.item');
+console.log(`Number of categories: ${numberOfCategories.length}`);
 
 
 //-------------Завдання 1.2.---------------------
@@ -27,3 +27,11 @@ const categoryThirdItem = document
 console.log(`Category: ${categoriesTitles[2].textContent}`);
 console.log(`Elements: ${categoryThirdItem.length}`);
 
+
+// const categoryInfo = numberOfCategories.forEach(category => {
+//     const categoryAllitems = document.querySelectorAll('.item');
+//     const categoryTitle = document.querySelector('h2');
+
+//     console.log(`Category: ${categoryTitle.textContent}`);
+//     console.log(`Elements: ${categoryAllitems.length}`);
+// });
