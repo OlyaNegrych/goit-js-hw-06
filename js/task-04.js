@@ -5,14 +5,14 @@ const incrementBtnRef = document.querySelector('[data-action="increment"]');
 const valueCounterRef = document.querySelector('#value');
 
 const decrementFn = () => {
-    valueCounterRef.textContent = counterValue;
     counterValue -= 1;
+    valueCounterRef.textContent = counterValue;
     return counterValue;
 };
 
 const incrementFn = () => {
-    valueCounterRef.textContent = counterValue;
     counterValue += 1;
+    valueCounterRef.textContent = counterValue;
     return counterValue;
 };
 

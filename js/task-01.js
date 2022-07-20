@@ -4,6 +4,21 @@ console.log(`Number of categories: ${numberOfCategories.length}`);
 
 
 //-------------Завдання 1.2.---------------------
+
+const categoryAllitems = document.querySelectorAll('.item');
+const categoryTitle = document.querySelectorAll('h2');
+const categoryLi = document.querySelectorAll('.item li');
+
+console.log(`Category: ${categoryTitle[0].textContent}`);
+console.log(`Elements: ${categoryLi[0].length}`);
+
+console.log(`Category: ${categoryTitle[1].textContent}`);
+console.log(`Elements: ${categoryLi[0].length}`);
+
+console.log(`Category: ${categoryTitle[2].textContent}`);
+console.log(`Elements: ${categoryLi[0].length}`);
+
+
 // const categoriesTitles = document.querySelectorAll('h2');
 
 // const categoryFirstItem = document
@@ -28,10 +43,4 @@ console.log(`Number of categories: ${numberOfCategories.length}`);
 // console.log(`Elements: ${categoryThirdItem.length}`);
 
 
-const categoryInfo = numberOfCategories.map(category => {
-    const categoryAllitems = document.querySelectorAll('.item');
-    const categoryTitle = document.querySelector('h2');
-
-    console.log(`Category: ${categoryTitle.textContent}`);
-    console.log(`Elements: ${categoryAllitems.length}`);
-});
+ 
